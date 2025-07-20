@@ -13,24 +13,70 @@ body {
 button {
   background-color: #007bff;
   color: white;
-  padding: 20px 40px;       /* Increased padding */
+  padding: 20px 40px; /* Increased padding */
   border: none;
-  border-radius: 10px;      /* Slightly larger radius */
-  font-size: 44px;          /* Larger text */
+  border-radius: 10px; /* Slightly larger radius */
+  font-size: 44px; /* Larger text */
   cursor: pointer;
   transition: background 0.3s ease;
-  min-width: 440px;         /* Optional: ensures wide button */
-  min-height: 140px;         /* Optional: makes it taller */
+  min-width: 440px; /* Optional: ensures wide button */
+  min-height: 140px; /* Optional: makes it taller */
 }
-
 
 button:hover {
   background-color: #0056b3;
 }
 
+.video-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 video {
   margin-top: 30px;
   max-width: 100%;
+  width: 100%;
+  height: auto;
   border: 2px solid #333;
   border-radius: 8px;
+  background: #000;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  button {
+    font-size: 24px;
+    min-width: 100%;
+    min-height: 60px;
+    padding: 12px 0;
+  }
+  #instruction {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+}
+
+.ad-banner {
+  width: 100%;
+  max-width: 728px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+.ad-banner iframe {
+  width: 100% !important;
+  max-width: 728px;
+  min-width: 320px;
+  height: auto !important;
+  min-height: 50px;
+  border: none;
+  display: block;
 }
